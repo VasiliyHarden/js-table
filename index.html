@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Table of items</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+  <title>Table of items</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
-	<section class="top-panel">
-		<form id='filter-form'>
-			<input 
-				id="filter-template"
-				placeholder="Filter by substring" 
-			/>
-			<button>Search</button>
-		</form>
-		<button id='add-new-button'>Add New</button>
-	</section>
+  <section class="top-panel">
+    <form id='filter-form'>
+      <input 
+        id="filter-template"
+        placeholder="Filter by substring" 
+      />
+      <button>Search</button>
+    </form>
+    <button id='add-new-button'>Add New</button>
+  </section>
 
 
 
-	<table>
-		<thead>
-			<tr>
-				<th id='name-column-header'>
-					<div class='table-header-cell'>
-						<div class="sort-arrow invisible"></div>	
-						Name
-						<div class="sort-arrow" id='name-sort-arrow'></div>	
-					</div>
-				</th>
-				<th>Count</th>
-				<th id='price-column-header'>
-					<div class='table-header-cell'>
-						<div class="sort-arrow invisible"></div>	
-						Price
-						<div class="sort-arrow" id='price-sort-arrow'></div>	
-					</div>
-				</th>
-				<th>Actions</th>
-			</tr>
-		</thead>
+  <table>
+    <thead>
+      <tr>
+        <th id='name-column-header'>
+          <div class='table-header-cell'>
+            <div class="sort-arrow invisible"></div>  
+            Name
+            <div class="sort-arrow" id='name-sort-arrow'></div> 
+          </div>
+        </th>
+        <th>Count</th>
+        <th id='price-column-header'>
+          <div class='table-header-cell'>
+            <div class="sort-arrow invisible"></div>  
+            Price
+            <div class="sort-arrow" id='price-sort-arrow'></div>  
+          </div>
+        </th>
+        <th>Actions</th>
+      </tr>
+    </thead>
 
-		<tbody id="table-body">
-			
-		</tbody>
+    <tbody id="table-body">
+      
+    </tbody>
 
-		<tfoot id="table-footer">
-			
-		</tfoot>
+    <tfoot id="table-footer">
+      
+    </tfoot>
 
-	</table>
+  </table>
 
-	<form id="add-form">
-		<div>
-			<p>Name:</p>
-			<input 
-					size="15"
-					id="item-name"
-					placeholder="Item name"
-			/>		
-		</div>
-		<div>
-			<p>Count:</p>
-			<input 
-					size="3"
-					id='item-count'
-					placeholder="0" 
-			/>			
-		</div>
+  <form id="add-form">
+    <div>
+      <p>Name*:</p>
+      <input 
+          size="15"
+          id="item-name"
+          placeholder="Item name"
+      />
+      
+    </div>
+    <div>
+      <p>Count:</p>
+      <input 
+          size="3"
+          id='item-count'
+          placeholder="0" 
+      />      
+    </div>
 
-		<div>
-			<p>Price:</p>
-			<input 
-					size="15"
-					id='item-price'
-					placeholder="123.45"
-			/>			
-		</div>			
+    <div>
+      <p>Price:</p>
+      <input 
+          size="15"
+          id='item-price'
+          placeholder="123.45"
+      />      
+    </div>      
 
-		<button id='submit-button'>Add</button>
-	</form>
+    <button id='submit-button'>Add</button>
+  </form>
+  <p id="name-field-error-message" class='error-message'></p>   
 
-	<script type="text/javascript" src="item.js"></script>
-	<script type="text/javascript" src="sorter.js"></script>
-	<script type="text/javascript" src="forms.js"></script>
-	<script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="item.js"></script>
+  <script type="text/javascript" src="sorter.js"></script>
+  <script type="text/javascript" src="forms.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
